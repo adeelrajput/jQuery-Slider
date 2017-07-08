@@ -1,0 +1,114 @@
+
+#wrap{
+    width: 1200px;
+    margin: 50px auto;
+    position: relative;
+}
+
+.before, .after{
+    width: 200px;
+    height: 150px;
+    display: inline-block;
+    margin: 150px 28px;
+    overflow: hidden;
+    position: relative;
+}
+
+.center{
+    position: relative;
+    width: 600px;
+    height: 380px;  
+    margin: 40px;
+    overflow: hidden;
+    display: inline-block;
+}
+
+img{
+    width: 0px;
+}
+
+.fa{
+    position: absolute;
+    top: 210px;
+    font-size: 50px;
+    color: #666;
+    cursor: pointer;
+}
+
+.fa-angle-double-left{
+    left: 250px;
+}
+
+.fa-angle-double-right{
+    right: 250px;
+}
+
+.demo{
+    width: 0;
+    animation: any2 2s
+}
+
+.before-img, .after-img{
+    width: 200px;
+    height: 150px;
+    position: absolute;
+    top: 0;
+    left: 0;
+}
+
+.after-img{
+    transition: all 1s ease-in;
+}
+
+.before-img{
+    transition: all 1s ease;
+}
+
+.center-img{
+    animation: main 1s;
+    width: 600px;
+    height: 380px;
+    position: absolute;
+    top: 0;
+}
+
+@keyframes main{
+    0%{opacity: 0;
+        width: 0px;}
+    50%{opacity: 0.5;}
+    100%{opacity: 1;
+        width: 600px;
+        }
+}
+
+/*@keyframes after{
+    0%{opacity: 0;
+        width: 0px;}
+    50%{opacity: 0.5;}
+    100%{opacity: 1;
+        width: 200px;
+        height: 150px;}
+}*/
+
+/*@keyframes before{
+    0%{opacity: 0;
+        width: 0px;}
+    50%{opacity: 0.5;}
+    100%{opacity: 1;
+        width: -200px;
+        height: 150px;}
+}*/
+
+/*
+@keyframes any2{
+    0%{opacity: 0;
+        width: 940px;
+        margin-left: 0; 
+        height: 380px;}
+    50%{opacity: 0.5;}
+    100%{opacity: 1;
+        width: 0px;
+        margin-left:940px; 
+        height: 380px;}
+    
+}*/
